@@ -1,0 +1,143 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: hsl(235, 18%, 26%);
+}
+.page1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  width: 850px;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 70px auto;
+}
+.page2 {
+  background: white;
+  border-radius: 20px;
+  width: 300px;
+  padding: 40px;
+  margin: 150px auto;
+  display: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+p {
+  font-size: 13px;
+}
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 70px 0 30px 0;
+}
+label {
+  display: flex;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 50px 0 10px 0;
+}
+input {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px rgb(172, 170, 170, 0.5) solid;
+  font-weight: 600;
+}
+footer {
+  color: white;
+}
+span {
+  color: hsl(4, 100%, 67%);
+  font-size: 9px;
+  margin-left: 170px;
+  display: none;
+}
+::placeholder {
+  color: rgb(172, 170, 170, 0.8);
+}
+.visible {
+  display: block;
+}
+.left {
+  margin: 0 60px 0 40px;
+  width: 350px;
+}
+.validate1,
+.validate2,
+.validate3 {
+  display: flex;
+  gap: 15px;
+  line-height: 5px;
+}
+.sentence {
+  margin-bottom: 40px;
+}
+.dismiss {
+  background: hsl(234, 29%, 20%);
+  color: white;
+  width: 300px;
+  margin-top: 30px;
+}
+.thank {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.submit {
+  background: hsl(234, 29%, 20%);
+  color: white;
+  margin-top: 20px;
+}
+.imgSiteMobile {
+  display: none;
+}
+.submit:hover,
+.dismiss:hover {
+  cursor: pointer;
+  transform: scale(0.99);
+  transition: 0.3s;
+  background: linear-gradient(to left, hsl(4, 100%, 67%), hsla(341, 84%, 60%));
+  box-shadow: 0 5px 15px hsl(4, 100%, 67%, 0.4);
+}
+.submit:active,
+.dismiss:active {
+  transform: scale(0.97);
+}
+.email:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 425px) {
+  body {
+    background: white;
+  }
+  footer {
+    color: black;
+  }
+  .page2 {
+    margin: 10px 0 0 0;
+  }
+  .succes {
+    margin-bottom: 200px;
+  }
+  .page1 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .imgSite {
+    display: none;
+  }
+  .imgSiteMobile {
+    display: block;
+  }
+  .submit {
+    width: 320px;
+    margin-bottom: 30px;
+  }
+  .email {
+    width: 288px;
+  }
+}
